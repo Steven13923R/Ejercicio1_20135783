@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_20135783.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label Text="Ingrese cuatro números enteros:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Campos de entrada para A, B, C y D -->
+            <Entry x:Name="EntryA" Placeholder="Número A" Keyboard="Numeric" />
+            <Entry x:Name="EntryB" Placeholder="Número B" Keyboard="Numeric" />
+            <Entry x:Name="EntryC" Placeholder="Número C" Keyboard="Numeric" />
+            <Entry x:Name="EntryD" Placeholder="Número D" Keyboard="Numeric" />
+
+            <!-- Botón para procesar e invertir -->
+            <Button Text="Mostrar en Orden Inverso"
+                    Clicked="OnInvertirClicked"
+                    BackgroundColor="#512BD4"
+                    TextColor="White" />
+
+            <!-- Etiqueta para mostrar el resultado -->
+            <Label x:Name="ResultadoLabel"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Green"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
